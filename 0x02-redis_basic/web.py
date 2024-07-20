@@ -49,4 +49,4 @@ if __name__ == "__main__":
 
     print(get_page(url))
     print(get_page(url))
-    print(f"Access count for {url}: {redis_client.get(f'count:{url}').decode('utf-8')}")
+    print(f"Access count for {url}: {r.get(f'count:{url}').decode('utf-8')}")
